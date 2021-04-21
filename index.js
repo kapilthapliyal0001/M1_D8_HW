@@ -23,6 +23,27 @@
 //        a bold text and a bigger font size
 //        Style every button of the page to be bigger
 //     */
+
+        let task_list = [];
+        // document.getElementsByTagName("input")[1].addEventListener("click", )
+
+        const addNewTask = function() {
+            let task = document.getElementsByTagName("input")[0].value
+            // console.log(task);
+            let un_list = document.getElementById("myTaskList");
+            un_list.innerText = "THE TASK ARE IN THE FOLLOWING ORDER ! :"
+            let li_item = document.createElement("li");
+            let parent_tag = document.get
+
+            task_list.pop();
+            task_list.push(task);
+            console.log(task_list);
+            document.getElementsByTagName("input")[0].value = "";
+
+            // creating a new div element for the task list item
+        }
+
+        addNewTask();
 //     
 //     
 
