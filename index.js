@@ -28,18 +28,25 @@
         // document.getElementsByTagName("input")[1].addEventListener("click", )
 
         const addNewTask = function() {
-            let task = document.getElementsByTagName("input")[0].value
+            let task = document.getElementsByTagName("input")[0];
+            let task_value = task.value;
             // console.log(task);
             let un_list = document.getElementById("myTaskList");
             un_list.innerText = "THE TASK ARE IN THE FOLLOWING ORDER ! :"
-            let li_item = document.createElement("li");
-            let parent_tag = document.get
 
             task_list.pop();
-            task_list.push(task);
+            task_list.push(task_value);
             console.log(task_list);
-            document.getElementsByTagName("input")[0].value = "";
 
+            // for (i = 0; i < task_list.length ; i++) {
+
+            let li_item = document.createElement("li");
+            li_item.innerText = task_list[task_list.length - 1];
+            let parent_tag = un_list;
+            parent_tag.appendChild(li_item);
+
+            // }
+            
             // creating a new div element for the task list item
         }
 
